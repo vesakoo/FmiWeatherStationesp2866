@@ -12,9 +12,9 @@ Forecast format:
  -3| -3| -2| -1|
 Ulko: -7'C
 ```
-row1: hour
-row2: temp
-row3: temp now 
+row1: hour   
+row2: temp   
+row3: temp now    
 
 ![alt text](https://github.com/vesakoo/FmiWeatherStationesp2866/blob/main/pics/station.png?raw=true)
 
