@@ -16,7 +16,7 @@ row1: hour
 row2: temp
 row3: temp now 
 
-![alt text](https://github.com/vesakoo/FmiWeatherStationesp2866/blob/main/images/station.png?raw=true)
+![alt text](https://github.com/vesakoo/FmiWeatherStationesp2866/blob/main/pics/station.png?raw=true)
 
 
 
