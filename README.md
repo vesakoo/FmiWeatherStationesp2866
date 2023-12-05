@@ -2,7 +2,7 @@
 
 ## Weather forecast 
 This Application fetches a temperature   
-forecast from given url and presents the result on TXT 240x240 panel  
+forecast from given url and presents the result on oled panel  
 Indoor temp and humidity is read with DHT-22 Sensor   
 WiFi configuration based on WiFi manager (no need to store secrets to code)
 
