@@ -51,7 +51,7 @@ NOTE! Pinout may change from board to board. Look the GPIO <-> PIN -mapping from
 
 | GPIO | Usage | 
 | ----|:----------------------------|
-| 5 | DHT Sensor data in SPI protocol|
+| 5 | DHT data|
 | 4 | Switch to trigger Wifi Manager. Use only irq enabled pin, INPUT_PULLUP & RISING internal resistor in use |
 | 14 | Oled SCA |
 | 12 | Oled  SDL |
