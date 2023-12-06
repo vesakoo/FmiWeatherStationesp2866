@@ -68,7 +68,9 @@ NOTE! Pinout may change from board to board. Look the GPIO <-> PIN -mapping from
 * install libs
 
 ### Links
-Esp8266 Pinout guide: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/   
+Esp8266 Pinout guide: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/    
+DHT-22 protocol: https://circuitdigest.com/microcontroller-projects/interface-dht22-sensor-module-with-arduino   
+
 
 
 
