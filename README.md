@@ -32,7 +32,10 @@ https://www.ilmatieteenlaitos.fi/avoin-data
 
 
 ### Hardware
-* IdeaSpark 2899
+* IdeaSpark 2899 Dev board
+* DHT-22 Tempereature and humidity sensor
+* Switch (For starting WiFi Manager. It's used for WiFi AP configuration https://github.com/tzapu/WiFiManager)
+  
 
 https://www.aliexpress.com/item/1005005242283189.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=492f1da5-0168-4e7f-85c7-8e3b85eef41f&_t=gps-id:pcStoreJustForYou,scm-url:1007.23125.137358.0,pvid:492f1da5-0168-4e7f-85c7-8e3b85eef41f,tpp_buckets:668%232846%238111%231996&pdp_npi=4%40dis%21EUR%215.47%215.47%21%21%215.79%21%21%402103249617018077493504245e5b81%2112000032335054938%21rec%21FI%212324326771%21
 
