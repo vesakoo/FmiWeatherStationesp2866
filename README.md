@@ -6,6 +6,13 @@ forecast from given url and presents the result on oled panel
 Indoor temp and humidity is read with DHT-22 Sensor   
 WiFi configuration based on WiFi manager (no need to store secrets to code)
 
+TLDR;
+* Setup webserver (for example https://github.com/vesakoo/fmiForecastEspoo  into crontab to genate files for your web server)
+* Wire your board
+* Clone this repo, upload firmware with Arduino IDE
+
+
+
 Forecast format:
 ```
  08| 12| 18| 21|
