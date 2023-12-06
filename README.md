@@ -10,7 +10,8 @@ TLDR;
 * Setup webserver (for example https://github.com/vesakoo/fmiForecastEspoo  into crontab to genate files for your web server)
 * Wire your board
 * Clone this repo, upload firmware with Arduino IDE
-* First run: Press the button on board to set up your Wifi router (With your Mobile phone or computer, Scan Wifi networks and connect to "WeatherStation". This will automatically open a web page for Wifi AP setup (for ESP).  
+* First run: Press the button on board to set up your Wifi router:
+  * With your Mobile phone or computer, Scan Wifi networks and connect to "WeatherStation". This will automatically open a web page for Wifi AP setup (for ESP).  
 
 
 
