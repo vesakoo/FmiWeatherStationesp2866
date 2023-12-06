@@ -45,7 +45,12 @@ https://www.aliexpress.com/item/1005005242283189.html?gps-id=pcStoreJustForYou&s
 
 
 ### Requirements
-* install libs   
+* install libs
+
+### Links
+Esp8266 Pinout guide: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/   
+
+
 
 
 
