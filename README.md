@@ -21,9 +21,9 @@ Forecast format:
  -3| -3| -2| -1|
 Ulko: -7'C
 ```
-row1: hour   16 charaters
-row2: temp   16 charaters
-row3: temp now   (max 11, varies)
+row1: hour   16 charaters   
+row2: temp   16 charaters   
+row3: temp now   (max 11, varies)   
 
 ### Web backend (Server)
 Example backend solution:  https://github.com/vesakoo/fmiForecastEspoo  
