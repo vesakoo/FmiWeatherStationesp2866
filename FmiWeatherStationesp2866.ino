@@ -12,22 +12,28 @@
 #include  <Wire.h>
 #include <U8g2lib.h> //oled lib
 #include <DHT.h> //dgt-22 temp & moisture sensor
+#define D0 16
+#define D1 5
 
 // select which pin will trigger the configuration portal when set to LOW
-#define TRIGGER_PIN 4
+#define TRIGGER_PIN 5 //D1 e
+//#define TRIGGER_PIN 4 //Crowtail 
 //WifiManager seconds to run for 
-int timeout = 120; 
+int timeout = 120;  
 
 // dht-22 sensor config
-#define DHTPIN 5
-#define DHTTYPE DHT22 
+#define DHTPIN 4 //D2
+//#define DHTPIN 5 //crowtail 
+#define DHTTYPE DHT22 //DHT11 Crowtail 
+
 
 // http request frequency
 #define REFRESH_INTERWALL 60000l
 
 //init oled
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C
-u8g2(U8G2_R0,14,12,U8X8_PIN_NONE);
+//u8g2(U8G2_R0,12,14,U8X8_PIN_NONE);
+u8g2(U8G2_R0,14,12,U8X8_PIN_NONE); //crowtail
 DHT dht(DHTPIN, DHTTYPE);
 volatile bool startWifiManager;
 
@@ -40,7 +46,7 @@ void setup() {
   u8g2.begin();
   Serial.begin(115200);
   WiFiManager wm; 
-  wm.autoConnect("WeatherStation","1234");
+  wm.autoConnect("JukanSaa");
   Serial.println("\n Starting");
   dht.begin();
   pinMode(TRIGGER_PIN, INPUT_PULLUP);
@@ -122,6 +128,7 @@ int * refreshDHT(){
   static  int toRet[2];
   float h = dht.readHumidity();
   float t = dht.readTemperature();
+  delay(2000);
   toRet[0] = (int)round(t);
   toRet[1] = (int)round(h);
   return toRet;
@@ -131,7 +138,7 @@ String refreshForecast(){
   WiFiClient client;
   HTTPClient http;
   String toRet = "";
-  if (http.begin(client, "http://robo.sukelluspaikka.fi/images/forecast.txt")) {  // HTTP
+  if (http.begin(client, "http://robo.sukelluspaikka.fi/images/forecast_jukka.txt")) {  // HTTP
     int httpCode = http.GET();
     if (httpCode > 0) {
       // HTTP header has been send and Server response header has been handled
@@ -154,11 +161,11 @@ String refreshForecast(){
 void startWiFiManager (){
   WiFiManager wm; 
   Serial.println("Starting manager");
-  //wm.resetSettings();
+  wm.resetSettings();
   // set configportal timeout
   wm.setConfigPortalTimeout(timeout);
 
-  if (!wm.startConfigPortal("WeatherStation")) {
+  if (!wm.startConfigPortal("JukanSaa")) {
     Serial.println("failed to connect and hit timeout");
     delay(3000);
     //reset and try again, or maybe put it to deep sleep
