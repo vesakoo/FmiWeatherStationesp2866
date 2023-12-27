@@ -10,6 +10,8 @@ TLDR;
 * Setup webserver (for example https://github.com/vesakoo/fmiForecastEspoo  into crontab to genate files for your web server)
 * Wire your board
 * Clone this repo, upload firmware with Arduino IDE
+* First run: Press the button on board to set up your Wifi router:
+  * With your Mobile phone or computer, Scan Wifi networks and connect to "WeatherStation". This will automatically open a web page for Wifi AP setup (for ESP).  
 
 
 
@@ -19,9 +21,9 @@ Forecast format:
  -3| -3| -2| -1|
 Ulko: -7'C
 ```
-row1: hour   16 charaters
-row2: temp   16 charaters
-row3: temp now   (max 11, varies)
+row1: hour,  16 charaters   
+row2: temp,   16 charaters   
+row3: temp now   (max 11, varies)   
 
 ### Web backend (Server)
 Example backend solution:  https://github.com/vesakoo/fmiForecastEspoo  
@@ -68,7 +70,9 @@ NOTE! Pinout may change from board to board. Look the GPIO <-> PIN -mapping from
 * install libs
 
 ### Links
-Esp8266 Pinout guide: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/   
+Esp8266 Pinout guide: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/    
+DHT-22 protocol: https://circuitdigest.com/microcontroller-projects/interface-dht22-sensor-module-with-arduino   
+
 
 
 
